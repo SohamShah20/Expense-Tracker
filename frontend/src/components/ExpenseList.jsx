@@ -56,7 +56,7 @@ const ExpenseList = ({ expenses, filterCategory, sortDateDesc, onFilterChange, o
               <td className="px-4 py-3 text-sm text-gray-300">{formatDate(expense.date)}</td>
               <td className="px-4 py-3 text-sm text-gray-200">{expense.description}</td>
               <td className="px-4 py-3">
-                <span className="px-2 py-1 text-xs bg-indigo-900 text-indigo-300 rounded-full">
+                <span className="px-2 py-1 text-xs bg-green-900 text-green-300 rounded-full">
                   {expense.category}
                 </span>
               </td>

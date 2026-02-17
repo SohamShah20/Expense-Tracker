@@ -86,7 +86,7 @@ function App() {
 
       <div className="max-w-6xl mx-auto">
         <header className="mb-10 text-center">
-          <h1 className="text-5xl font-extrabold text-indigo-400 mb-2">
+          <h1 className="text-5xl font-extrabold text-green-400 mb-2">
             Expense Tracker
           </h1>
           <p className="text-gray-400">
@@ -103,7 +103,7 @@ function App() {
             <h3 className="text-gray-400 text-sm uppercase font-semibold mb-2">
               Total Expenses
             </h3>
-            <p className="text-4xl font-bold text-indigo-400 mb-2">
+            <p className="text-4xl font-bold text-green-400 mb-2">
               {totalAmountFormatted}
             </p>
             <p className="text-sm text-gray-500 mb-6">
@@ -136,7 +136,7 @@ function App() {
 
         {loading ? (
           <div className="text-center py-10">
-            <div className="animate-spin h-12 w-12 border-4 border-indigo-500 border-t-transparent rounded-full mx-auto"></div>
+            <div className="animate-spin h-12 w-12 border-4 border-green-500 border-t-transparent rounded-full mx-auto"></div>
             <p className="mt-4 text-gray-400">Loading expenses...</p>
           </div>
         ) : (

@@ -64,21 +64,21 @@ const ExpenseForm = ({ onExpenseAdded }) => {
             placeholder="Amount ($)"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
-            className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 focus:ring-2 focus:ring-indigo-500"
+            className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 focus:ring-2 focus:ring-green-500"
           />
 
           <input
             type="datetime-local"
             value={date}
             onChange={(e) => setDate(e.target.value)}
-            className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 focus:ring-2 focus:ring-indigo-500"
+            className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 focus:ring-2 focus:ring-green-500"
           />
         </div>
 
         <select
           value={category}
           onChange={(e) => setCategory(e.target.value)}
-          className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 focus:ring-2 focus:ring-indigo-500"
+          className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 focus:ring-2 focus:ring-green-500"
         >
           <option value="">Select Category</option>
           <option value="Food">Food</option>
@@ -94,7 +94,7 @@ const ExpenseForm = ({ onExpenseAdded }) => {
           placeholder="Description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
-          className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 focus:ring-2 focus:ring-indigo-500"
+          className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 focus:ring-2 focus:ring-green-500"
         />
 
         <button
@@ -102,8 +102,8 @@ const ExpenseForm = ({ onExpenseAdded }) => {
           disabled={isSubmitting}
           className={`w-full py-3 rounded-xl font-semibold ${
             isSubmitting
-              ? 'bg-indigo-400 cursor-not-allowed'
-              : 'bg-indigo-600 hover:bg-indigo-500 text-white'
+              ? 'bg-green-400 cursor-not-allowed'
+              : 'bg-green-600 hover:bg-green-500 text-white'
           }`}
         >
           {isSubmitting ? 'Saving...' : 'Add Expense'}
