@@ -11,7 +11,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-  origin: 'https://soham-expensetracker.vercel.app/'
+  origin: 'soham-expensetracker-irjzw17df-sohamshah20s-projects.vercel.app'
 }));
 
 app.use(express.json());
